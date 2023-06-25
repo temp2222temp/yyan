@@ -2,62 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tip Calculator</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to the Tip Calculator &#127869; </h1>
   <main>
-    <section id="input-section">
-      <h2>Bill Information</h2>
-      <label for="pre-tax-total">Pre-tax Total:</label>
-      <input type="number" id="pre-tax-total" min="0" step="0.01" required>
-      <br>
+    <h1>Welcome to the Tip Calculator &#127869; </h1>
+    <div class="content">
+      <section id="input-section">
+        <h2>Bill Information</h2>
+        <label for="pre-tax-total">Pre-tax Total:</label>
+        <input type="number" id="pre-tax-total" min="0" step="0.01" value="0" required>
+        <br>
 
-      <label for="num-diners">Number of Diners:</label>
-      <input type="number" id="num-diners" min="2" max="32" required>
-      <br>
+        <label for="num-diners">Number of Diners:</label>
+        <input type="number" id="num-diners" min="2" max="32" value="2" required>
+        <br>
 
-      <label for="gratuity">Gratuity:</label>
-      <input type="number" id="gratuity" min="5" max="35" step="5" required>
-      <br>
-      <label for="tax-rate">Tax Rate:</label>
-      <select id="tax-rate">
-        <option value="0.05">Alberta (5%)</option>
-        <option value="0.12">British Columbia (12%)</option>
-        <option value="0.12">Manitoba (12%)</option>
-        <option value="0.15">New Brunswick (15%)</option>
-        <option value="0.15">Newfoundland and Labrador (15%)</option>
-        <option value="0.05">Northwest Territories (5%)</option>
-        <option value="0.15">Nova Scotia (15%)</option>
-        <option value="0.05">Nunavut (5%)</option>
-        <option value="0.13">Ontario (13%)</option>
-        <option value="0.15">Prince Edward Island (15%)</option>
-        <option value="0.14975">Quebec (14.975%)</option>
-        <option value="0.11">Saskatchewan (11%)</option>
-        <option value="0.05">Yukon (5%)</option>
-      </select>
+        <label for="gratuity">Gratuity (%):</label>
+        <input type="number" id="gratuity" min="5" max="35" step="5" value="15" required>
+        <br>
+        <label for="tax-rate">Tax Rate:</label>
+        <select id="tax-rate">
+          <option value="0.05">Alberta (5%)</option>
+          <option value="0.12">British Columbia (12%)</option>
+          <option value="0.12">Manitoba (12%)</option>
+          <option value="0.15">New Brunswick (15%)</option>
+          <option value="0.15">Newfoundland and Labrador (15%)</option>
+          <option value="0.05">Northwest Territories (5%)</option>
+          <option value="0.15">Nova Scotia (15%)</option>
+          <option value="0.05">Nunavut (5%)</option>
+          <option value="0.13">Ontario (13%)</option>
+          <option value="0.15">Prince Edward Island (15%)</option>
+          <option value="0.14975">Quebec (14.975%)</option>
+          <option value="0.11">Saskatchewan (11%)</option>
+          <option value="0.05">Yukon (5%)</option>
+        </select>
 
-   
-    </section>
-
-    <section id="result-section">
-      <h2>Split Bill</h2>
-      <p>Pre-tax Total: <span id="pre-tax-total-output"></span></p>
-      <p>Number of Diners: <span id="num-diners-output"></span></p>
-      <p>Total Tip (Gratuity): <span id="total-tip-output"></span></p>
-      <p>Percentage of Pre-tax Bill: <span id="pre-tax-percentage-output"></span></p>
-      <p>Total Tax: <span id="total-tax-output"></span></p>
-      <p>Total Bill: <span id="total-bill-output"></span></p>
-      <p>Total per Diner: <span id="total-per-diner-output"></span></p>
     
-    </section>
+      </section>
+
+      <section id="result-section">
+        <h2>Split Bill</h2>
+        <p>Pre-tax Total: <span id="pre-tax-total-output"></span></p>
+        <p>Number of Diners: <span id="num-diners-output"></span></p>
+        <p>Total Tip (Gratuity): <span id="total-tip-output"></span></p>
+        <p>Percentage of Pre-tax Bill: <span id="pre-tax-percentage-output"></span></p>
+        <p>Total Tax: <span id="total-tax-output"></span></p>
+        <p>Total Bill: <span id="total-bill-output"></span></p>
+        <p>Total per Diner: <span id="total-per-diner-output"></span></p>
+      
+      </section>
+    </div>
   </main>
 
   <script src="script.js"></script>
   <footer>
     <small>&copy; 2023 Yan Lok Yuen. All Rights Reserved.</small>
-
-</footer>
+  </footer>
 </body>
 </html>

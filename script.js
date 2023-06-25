@@ -30,13 +30,13 @@ document.addEventListener("DOMContentLoaded", function() {
       const preTaxPercentage = (preTaxTotal / totalBill) * 100;
   
 
-      preTaxTotalOutput.textContent = preTaxTotal.toFixed(2);
+      preTaxTotalOutput.textContent = '$' + preTaxTotal.toFixed(2);
       numDinersOutput.textContent = numDiners;
-      totalTipOutput.textContent = tipAmount.toFixed(2);
-      totalTaxOutput.textContent = totalTax.toFixed(2);
-      totalBillOutput.textContent = totalBill.toFixed(2);
-      totalPerDinerOutput.textContent = totalPerDiner.toFixed(2);
-      preTaxPercentageOutput.textContent = preTaxPercentage.toFixed(2) + "%";
+      totalTipOutput.textContent = '$' + tipAmount.toFixed(2);
+      totalTaxOutput.textContent = '$' + totalTax.toFixed(2);
+      totalBillOutput.textContent = '$' + totalBill.toFixed(2);
+      totalPerDinerOutput.textContent = '$' + totalPerDiner.toFixed(2);
+      preTaxPercentageOutput.textContent = gratuity + "%";
     }
   
 
